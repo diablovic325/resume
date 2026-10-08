@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="page-header text-center">
+  <p class="eyebrow">Можливості</p>
+  <h2 class="page-title">Мої навички</h2>
+  <p class="page-subtitle">Поєднання технічних знань і професійних якостей, які я вношу в проєкти.</p>
+</section>
+
+<div class="row g-4">
+  <div class="col-lg-6">
+    <div class="skill-card">
+      <h3>Технічні навички</h3>
+      <ul class="skill-list">
+        <li><span>Python (ООП, основи)</span><span class="badge">Core</span></li>
+        <li><span>Django Framework</span><span class="badge">Web</span></li>
+        <li><span>HTML &amp; CSS</span><span class="badge">UI</span></li>
+        <li><span>Git &amp; GitHub</span><span class="badge">Team</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="skill-card">
+      <h3>Особистісні навички</h3>
+      <ul class="skill-list">
+        <li><span>Управління часом</span><span class="badge">Сильне</span></li>
+        <li><span>Комунікація</span><span class="badge">Чітка</span></li>
+        <li><span>Критичне мислення</span><span class="badge">Аналітика</span></li>
+        <li><span>Відкрита натура</span><span class="badge">Розвиток</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

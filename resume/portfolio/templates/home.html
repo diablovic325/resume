@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="hero-panel">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-4 text-center">
+      <img src="{% static 'images/avatar.jpg' %}" alt="Profile Picture" class="profile-img">
+    </div>
+    <div class="col-lg-8">
+      <p class="eyebrow">Python Developer</p>
+      <h1 class="display-4 fw-bold">Привіт, я Влад.</h1>
+      <p class="lead text-muted">
+        Я створюю сучасні веб-продукти, чисті інтерфейси та ефективні рішення з акцентом на зручність для користувача.
+      </p>
+      <hr class="section-divider">
+      <p class="mb-4">
+        Мені подобається створювати продумані цифрові продукти та втілювати ідеї в надійні та зрозумілі рішення.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="{% url 'projects' %}" role="button">Мої проєкти</a>
+        <a class="btn btn-outline-light btn-lg" href="{% url 'skills' %}" role="button">Навички</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

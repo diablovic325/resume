@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="page-header text-center">
+  <p class="eyebrow">Портфоліо</p>
+  <h2 class="page-title">Обрані проєкти</h2>
+  <p class="page-subtitle">Кілька прикладів робіт, в яких поєднуються чистий дизайн і практична функціональність.</p>
+</section>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <article class="project-card">
+      <div class="project-thumb project-one">
+        <span>Веб-додаток</span>
+      </div>
+      <div class="project-body">
+        <h3>Сайт-портфоліо</h3>
+        <p>Сучасний персональний сайт на Django та Bootstrap, з акцентом на сильну візуальну ідентичність та зрозумілий UX.</p>
+        <a href="#" class="btn btn-outline-light btn-sm">Переглянути</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col">
+    <article class="project-card">
+      <div class="project-thumb project-two">
+        <span>Дашборд</span>
+      </div>
+      <div class="project-body">
+        <h3>Аналітичний дашборд</h3>
+        <p>Концепція інтерфейсу для візуалізації метрик, трендів і даних про продуктивність у чистому та зручному стилі.</p>
+        <a href="#" class="btn btn-outline-light btn-sm">Переглянути</a>
+      </div>
+    </article>
+  </div>
+</div>
+{% endblock %}
